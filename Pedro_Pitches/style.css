@@ -1,0 +1,204 @@
+/** @format */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+p {
+  position: absolute;
+  color: white;
+  font-size: 24px;
+}
+
+.imgDiv {
+  height: 100vh;
+  width: 100vw;
+}
+
+.imgDivAnchorDiv {
+  position: absolute;
+  top: calc(90vh);
+  left: calc(90vw);
+  height: 50px;
+  width: 50px;
+  background-color: #192c55;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.imgDivAnchorDiv > a {
+  color: white;
+  font-size: 24px;
+}
+
+.imgDivAnchorDiv > a > span {
+  vertical-align: middle;
+}
+
+img {
+  height: 100%;
+  width: 100%;
+}
+
+.pitches {
+  display: grid;
+  background-color: #192c55;
+  color: white;
+  grid-template-areas:
+    'fb fb fb'
+    'ts ts ts'
+    'ct ct ct'
+    'ch ch ch'
+    'cb cb cb';
+}
+
+.pitches > span {
+  position: absolute;
+}
+
+.ballDiv {
+  width: 100%;
+  height: 75px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  color: white;
+  border: 1px solid #bd3039;
+}
+
+.fastballSpan {
+  top: calc(100vh - 1px);
+}
+
+.twoseamfastballSpan {
+  top: calc(100vh + 76px);
+}
+
+.cutballSpan {
+  top: calc(100vh + 151px);
+}
+
+.circlechangeSpan {
+  top: calc(100vh + 226px);
+}
+
+.curveSpan {
+  top: calc(100vh + 301px);
+}
+
+.ball {
+  height: 30px;
+  width: 30px;
+  background-color: white;
+  border-radius: 50%;
+  border: 1px solid #bd3039;
+}
+
+.ballDiv:hover {
+  background-color: rgba(42, 69, 133, 0.4);
+}
+
+.l-fastball {
+  grid-area: fb;
+}
+
+.fastballA {
+  animation: fastballA 0.5s linear 1;
+}
+
+.l-two-seam-fastball {
+  grid-area: ts;
+}
+
+.two-seam-fastballA {
+  animation: twoseamfastballA 0.6s ease-out 1;
+}
+
+.l-cut-fastball {
+  grid-area: ct;
+}
+
+.cut-fastballA {
+  animation: cutfastballA 0.6s ease-out 1;
+}
+
+.l-change-up {
+  grid-area: ch;
+}
+
+.change-upA {
+  animation: changeA 1.6s linear 1;
+}
+
+.l-curveball {
+  grid-area: cb;
+}
+
+.curveballA {
+  animation: curveA 1.8s linear 1;
+}
+
+@keyframes fastballA {
+  0% {
+    transform: translateX(0);
+  }
+  50% {
+    transform: translateX(70%);
+  }
+  100% {
+    transform: translateX(100%);
+  }
+}
+
+@keyframes twoseamfastballA {
+  0% {
+    transform: translate(0, 0);
+  }
+  50% {
+    transform: translate(70%, 10%);
+  }
+  100% {
+    transform: translate(100%, 20%);
+  }
+}
+
+@keyframes cutfastballA {
+  0% {
+    transform: translate(0, 0);
+  }
+  50% {
+    transform: translate(70%, -5%);
+  }
+  100% {
+    transform: translate(100%, -20%);
+  }
+}
+
+@keyframes changeA {
+  0% {
+    transform: translate(0, 0);
+  }
+  50% {
+    transform: translate(70%, 5%);
+  }
+  100% {
+    transform: translate(100%, 20%);
+  }
+}
+
+@keyframes curveA {
+  0% {
+    transform: translate3d(0, 0, 0);
+  }
+  50% {
+    transform: translate3d(70%, 15%, 5px);
+  }
+  100% {
+    transform: translate3d(100%, -30%, 10px);
+  }
+}

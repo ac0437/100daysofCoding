@@ -1,0 +1,116 @@
+/** @format */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+main {
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+}
+
+.bg-image {
+  background: url('./assets/Fire-Nation-Map.png') no-repeat center center fixed;
+  background-size: cover;
+  height: 100vh;
+  width: 100vw;
+  filter: blur(8px);
+}
+
+.avatar {
+  height: 75px;
+  width: 75px;
+  border: 1px solid black;
+  border-radius: 50%;
+}
+
+.avatar img {
+  height: 75px;
+  width: 75px;
+  border-radius: 50%;
+}
+
+.container {
+  position: absolute;
+  height: 200px;
+  width: 200px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.login {
+  height: 100px;
+  width: 200px;
+  flex-direction: column;
+  margin: 5px;
+}
+
+#password {
+  margin: 5px;
+  width: 130px;
+  height: 25px;
+  border: 0.5px solid #ccc;
+  border-radius: 2px;
+}
+
+footer {
+  position: absolute;
+  top: 575px;
+  width: 300px;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+footer div {
+  text-align: center;
+}
+
+.progressDivSize {
+  width: 100px;
+  height: 30px;
+  border-radius: 5px;
+}
+
+.progress_animation {
+  visibility: hidden;
+  width: 1%;
+  height: 15px;
+  border-radius: 5px;
+  background-color: white;
+  animation: progress 5s linear;
+}
+
+@keyframes progress {
+  0% {
+    visibility: visible;
+    width: 1%;
+  }
+  10% {
+    width: 10%;
+  }
+  25% {
+    width: 25%;
+  }
+  50% {
+    width: 50%;
+  }
+  80% {
+    width: 80%;
+  }
+  99% {
+    width: 100%;
+  }
+  100% {
+    visibility: hidden;
+  }
+}

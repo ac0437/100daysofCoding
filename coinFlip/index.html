@@ -1,0 +1,36 @@
+<!-- @format -->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <main class="container">
+      <span class="flip_result">Press heads or tails to flip the coin!</span>
+      <div class="CPU">
+        <img
+          class="rotate"
+          id="coin"
+          src="./assets/heads.png"
+          alt="Heads or Tails"
+        />
+      </div>
+      <span class="win"></span>
+      <div class="winsDiv"></div>
+      <div class="wins_count">
+        <span>Player: </span><span class="playerWins">0</span> <span>CPU: </span
+        ><span class="cpuWins">0</span>
+      </div>
+      <br />
+      <div class="btn_container">
+        <button class="btn heads">Heads</button>
+        <button class="btn tails">Tails</button>
+      </div>
+      <script src="app.js"></script>
+    </main>
+  </body>
+</html>

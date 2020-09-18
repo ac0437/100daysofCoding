@@ -1,0 +1,78 @@
+/** @format */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+  width: 100vw;
+  background: radial-gradient(#877474, #3f3656);
+}
+
+.container {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.contentDiv {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+img {
+  z-index: 100;
+  position: relative;
+  top: 8px;
+  height: 300px;
+  width: 300px;
+  border-radius: 5px;
+  box-shadow: 0 0 20px rgb(250, 245, 113, 0.5);
+}
+
+.projectDiv {
+  z-index: 99;
+  width: 75%;
+  height: 75px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 8px;
+  background-color: #3f3656;
+  box-shadow: 0 0 20px rgb(250, 245, 113, 0.5);
+}
+
+.projectUl {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.projectUl > li {
+  list-style: none;
+  padding: 10px;
+  text-align: center;
+}
+
+.iconDiv {
+  width: 60%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #817a9f;
+  /* box-shadow: 0 0 20px rgb(250, 245, 113, 0.5); */
+  color: #dbd9de;
+  border-radius: 8px;
+}
+
+.fa-github:hover,
+.fa-youtube:hover {
+  box-shadow: 0 0 20px rgb(250, 245, 113, 0.5);
+}
