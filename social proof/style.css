@@ -1,0 +1,181 @@
+/** @format */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+main {
+  height: 95%;
+  width: 95%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+img {
+  height: 30px;
+  width: 30px;
+  border-radius: 50%;
+  margin: 5px;
+}
+
+svg:first-child {
+  margin-left: 5px;
+}
+
+.svgTop {
+  height: 600px;
+  width: 600px;
+  position: absolute;
+  top: -200px;
+  left: -200px;
+  z-index: -10;
+}
+
+.svgBottom {
+  height: 800px;
+  width: 800px;
+  position: absolute;
+  bottom: -300px;
+  right: -200px;
+  z-index: -10;
+}
+
+.container {
+  padding: 55px;
+  height: 80%;
+  width: 80%;
+  border: 1px solid #ccc;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.7);
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr 2fr;
+  grid-template-areas:
+    'product star'
+    'product  star'
+    'test test'
+    'test test';
+}
+
+.products {
+  grid-area: product;
+  /* background-color: blue; */
+}
+
+.products > h1 {
+  font-size: 42px;
+  font-family: Yanone Kaffeesatz;
+  font-weight: 900;
+}
+
+.products > p {
+  font-size: 12px;
+  font-family: Roboto;
+  font-weight: 300;
+}
+
+.stars {
+  grid-area: star;
+  /* background-color: red; */
+}
+
+.starDiv {
+  width: 75%;
+  border-radius: 5px;
+  padding: 7px;
+  font-size: 12px;
+  margin-bottom: 10px;
+  font-family: Roboto;
+  font-weight: 700;
+  background-color: #e6e6fa;
+  display: flex;
+  justify-self: center;
+  align-items: center;
+}
+
+.starDiv svg {
+  width: 18px;
+  height: 18px;
+  fill: #ffc40c;
+}
+
+.starDiv > span {
+  margin-left: 10px;
+  padding: 2px;
+}
+
+.fist {
+  margin-left: 10px;
+}
+.second {
+  margin-left: 20px;
+}
+
+.thrid {
+  margin-left: 40px;
+}
+
+.testimonials {
+  grid-area: test;
+  display: flex;
+  justify-content: space-around;
+  /* background-color: green; */
+}
+
+.testimonial {
+  width: 220px;
+  height: 150px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  padding: 20px;
+  background-color: #32127a;
+}
+
+.testimonial > p {
+  font-size: 11px;
+  color: whitesmoke;
+}
+
+.firstTestDiv,
+.secondTestDiv,
+.thridTestDiv {
+  display: flex;
+  font-family: Roboto;
+  font-size: 12px;
+  font-weight: 500;
+}
+
+.firstTestText > span:nth-child(1) {
+  color: whitesmoke;
+}
+
+.firstTestText > span:nth-child(2) {
+  color: #5218fa;
+}
+
+.firstTest {
+  margin-top: 20px;
+}
+
+.secondTest {
+  margin-top: 40px;
+}
+
+.thridTest {
+  margin-top: 60px;
+}
+
+.firstTestText {
+  display: flex;
+  flex-direction: column;
+}
