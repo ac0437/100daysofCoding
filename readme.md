@@ -11,9 +11,11 @@
 | nav_focus             | https://youtu.be/LwdDwQAdYkg |
 | Pedro_Pitches         | https://youtu.be/3TygZHrhXNM |
 | pulse loading         | https://youtu.be/xIH3L_9kq6M |
+| responsive            | https://youtu.be/t9t4GwOPnok |
 | rock, paper, scissors | https://youtu.be/sRaX4__g2Hg |
 | scroller              | https://youtu.be/rj4O08hA80E |
 | social proof          | https://youtu.be/p4Oyy6r3p1o |
 | spinning circle       | https://youtu.be/HfagxnMUt8Q |
+| split shadow          | https://youtu.be/gQmyzqKdryk |
 | spotify UI            | https://youtu.be/K9t8q2QQuT4 |
 | User Design Profile   | https://youtu.be/tDb3SebLhTM |
