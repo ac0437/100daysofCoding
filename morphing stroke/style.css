@@ -1,0 +1,108 @@
+/** @format */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+
+body {
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+  display: flex;
+
+  flex-direction: column;
+}
+
+h1 {
+  display: inline;
+  font-weight: 100;
+  font-size: 120px;
+  position: absolute;
+  top: 50%;
+  left: 30%;
+  transform: translateY(-55%);
+  z-index: 10;
+}
+
+.dn {
+  display: none;
+}
+
+.dot {
+  display: inline-block;
+  transform-origin: bottom;
+}
+
+.dot-1 {
+  animation: jump 1s ease 1.5s;
+}
+.dot-2 {
+  animation: jump 1s ease 3s;
+}
+.dot-3 {
+  animation: jump 1s ease 4.5s;
+}
+
+.stroke-blue,
+.stroke-yellow,
+.stroke-red,
+.stroke-green {
+  width: 100%;
+  height: 25vh;
+  transform: scaleX(0);
+}
+
+.stroke-blue {
+  background-color: rgb(0, 0, 255);
+  transform-origin: left;
+  animation: slide 1.5s ease-in forwards;
+}
+
+.stroke-yellow {
+  background-color: rgb(255, 255, 0);
+  transform-origin: right;
+  animation: slide 1.5s ease-in 1.5s forwards;
+}
+
+.stroke-red {
+  background-color: rgb(255, 0, 0);
+  transform-origin: left;
+  animation: slide 1.5s ease-in 3s forwards;
+}
+
+.stroke-green {
+  background-color: rgb(0, 255, 0);
+  transform-origin: right;
+  animation: slide 1.5s ease-in 4.5s forwards;
+}
+
+@media (max-width: 800px) {
+  h1 {
+    left: 0;
+  }
+}
+
+@keyframes slide {
+  to {
+    transform: scaleX(1);
+  }
+}
+
+@keyframes jump {
+  0% {
+    transform: translateY(1);
+  }
+  50% {
+    transform: translateY(-50px);
+  }
+  100% {
+    transform: translateY(1);
+  }
+}

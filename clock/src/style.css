@@ -1,0 +1,38 @@
+/** @format */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+
+.inside {
+  border: 1px solid black;
+  padding: 5px;
+  background: black;
+}
+
+.outside {
+  border: 1px solid darkslategray;
+  padding: 7px;
+  border-radius: 2px;
+  background: darkslategray;
+  box-shadow: 0 15px 8px 4px rgba(0, 0, 0, 0.6);
+}
+body {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: midnightblue;
+}
+
+h1 {
+  color: skyblue;
+}

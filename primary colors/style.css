@@ -1,0 +1,146 @@
+/** @format */
+:root {
+  --font-primary: 'Caveat', cursive;
+  --font-weight: 700;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  width: 100%;
+  height: 100vh;
+  display: grid;
+  grid-template-columns: repeat(18, 1fr);
+  grid-template-rows: repeat(15, 1fr);
+  font-family: var(--font-primary);
+  /* border: 2px solid black; */
+  /* padding: 10px; */
+}
+
+main {
+  grid-area: 3/1 / span 10 / span 10;
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  grid-template-rows: repeat(7, 1fr);
+  font-size: 12px;
+  column-gap: 20px;
+}
+
+section {
+  grid-area: 2/9/15 / 18;
+  display: flex;
+  justify-content: center;
+}
+
+.heading {
+  grid-area: 2/2/3 / span 6;
+  padding: 10px;
+  margin-left: 20px;
+  letter-spacing: 2px;
+}
+
+.sub-heading-1 {
+  grid-area: 1/2 / span 1 / span 1;
+  align-self: end;
+  letter-spacing: 2px;
+}
+
+#img-pc {
+  grid-area: 2/2 / span 1 / span 1;
+  width: 125px;
+}
+
+.sub-heading-2 {
+  grid-area: 1/3/1 / span 1;
+  align-self: end;
+  letter-spacing: 2px;
+}
+
+#img-red {
+  grid-area: 2/3 / span 1 / span 1;
+  width: 77.25px;
+  height: 20px;
+}
+
+.sub-heading-3 {
+  grid-area: 1/4/1 / span 1;
+  align-self: end;
+  letter-spacing: 2px;
+}
+
+#img-yellow {
+  grid-area: 2/4 / span 1 / span 1;
+  width: 77.25px;
+  height: 20px;
+}
+
+.sub-heading-4 {
+  grid-area: 1/5/1 / span 1;
+  align-self: end;
+  letter-spacing: 2px;
+}
+
+#img-blue {
+  grid-area: 2/5 / span 1 / span 1;
+  width: 77.25px;
+  height: 20px;
+}
+
+.btn {
+  background: transparent;
+  outline: none;
+  border: none;
+  font-family: var(--font-primary);
+  font-size: 32px;
+  cursor: pointer;
+  justify-self: start;
+  font-weight: var(--font-weight);
+  letter-spacing: 2px;
+  transition: all 0.4s ease-out;
+}
+
+.btn:hover {
+  transform: scale(1.1);
+}
+
+.btn:active {
+  transform: scale(0.9);
+}
+
+.btn:hover:nth-of-type(1) {
+  color: red;
+}
+
+.btn:hover:nth-of-type(2) {
+  color: yellow;
+}
+
+.btn:hover:nth-of-type(3) {
+  color: blue;
+}
+
+#btn-red {
+  grid-area: 3/2 / span 1 / span 2;
+}
+
+#btn-yellow {
+  grid-area: 5/2 / span 1 / span 2;
+}
+
+#btn-blue {
+  grid-area: 7/2 / span 1 / span 2;
+}
+
+#img-color--container {
+  /* grid-area: 1/9/15 / 18; */
+  width: 100%;
+  height: 100%;
+}
