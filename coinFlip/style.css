@@ -31,14 +31,21 @@ main {
 .CPU {
   display: flex;
   flex-direction: column;
-  justify-content: center;
   align-items: center;
+  justify-content: center;
+  margin-bottom: 100px;
+  position: relative;
+  transform-style: preserve-3d;
+  /* backface-visibility: hidden; */
 }
 
-#coin {
-  display: block;
-  height: 100px;
-  width: 100px;
+#coin,
+#coin-2 {
+  height: 75px;
+  width: 75px;
+  position: absolute;
+  top: 6px;
+  visibility: visible;
 }
 
 .rotate {

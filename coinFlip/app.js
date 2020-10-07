@@ -7,6 +7,7 @@ let winner = document.querySelector('.winsDiv');
 let playerWins = document.querySelector('.playerWins');
 let cpuWins = document.querySelector('.cpuWins');
 let coin = document.getElementById('coin');
+let coin2 = document.getElementById('coin-2');
 let result = document.querySelector('.flip_result');
 let htArr = ['Heads', 'Tails'];
 let playerChoice;
@@ -31,12 +32,18 @@ tails.addEventListener('click', () => {
 function compare(pHT, cHT) {
   result.innerText = `It's ${cHT}!`;
   if (cHT === 'Heads') {
-    coin.src = './assets/heads.png';
     coin.classList.remove('rotate');
+    coin2.classList.remove('rotate');
+    coin.style.zIndex = 10;
+    coin2.style.zIndex = -1;
+    coin.src = './assets/heads.png';
   }
   if (cHT === 'Tails') {
-    coin.src = './assets/tails.png';
     coin.classList.remove('rotate');
+    coin2.classList.remove('rotate');
+    coin.style.zIndex = -1;
+    coin2.style.zIndex = 10;
+    coin.src = './assets/tails.png';
   }
 
   if (pHT === cHT) {

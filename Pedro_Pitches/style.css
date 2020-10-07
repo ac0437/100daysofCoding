@@ -202,3 +202,11 @@ img {
     transform: translate3d(100%, -30%, 10px);
   }
 }
+
+.hidden {
+  display: none;
+}
+
+.rotateArrow {
+  transform: rotate(180deg);
+}

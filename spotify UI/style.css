@@ -79,14 +79,19 @@ footer {
   transition: all 0.3s ease-in-out;
 }
 
-.main-background--container {
+.main-background--container,
+svg {
   width: 100%;
   height: 100%;
   background-color: var(--color-secondary);
+  display: flex;
+  justify-content: center;
+  z-index: 10;
+  overflow: hidden;
 }
 
 .main-header--container {
-  position: absolute;
+  position: relative;
   top: 25%;
   padding: 24px;
   text-align: center;
@@ -146,7 +151,7 @@ footer {
   height: 6.5em;
   width: 6.5em;
   border-radius: 0%;
-  clip-path: circle(50% at center right);
+  clip-path: circle(50%);
   left: 71%;
   bottom: 10%;
 }
@@ -154,10 +159,10 @@ footer {
 .sm-circle {
   height: 4em;
   width: 4em;
-  top: 86.9%;
+  top: 85.9%;
   left: 16%;
   border-radius: 0%;
-  clip-path: circle(50% at center bottom);
+  clip-path: circle(50%);
   z-index: 1;
   mix-blend-mode: exclusion;
 }

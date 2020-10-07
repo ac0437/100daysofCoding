@@ -6,6 +6,8 @@ let cutfastball = document.querySelector('.l-cut-fastball');
 let changeup = document.querySelector('.l-change-up');
 let curve = document.querySelector('.l-curveball');
 let ballDiv = document.querySelector('.ballDiv');
+let display = document.querySelector('.imgDivAnchorDiv');
+let pitches = document.querySelector('.pitches');
 
 fastball.addEventListener('click', () => {
   fastball.classList.add('fastballA');
@@ -30,4 +32,13 @@ changeup.addEventListener('click', () => {
 curve.addEventListener('click', () => {
   curve.classList.add('curveballA');
   setTimeout(() => curve.classList.remove('curveballA'), 1900);
+});
+
+display.addEventListener('click', () => {
+  display.classList.toggle('rotateArrow');
+  if (!pitches.classList.contains('hidden')) {
+    pitches.classList.add('hidden');
+  } else {
+    pitches.classList.remove('hidden');
+  }
 });

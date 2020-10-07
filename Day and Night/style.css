@@ -31,7 +31,7 @@ main {
   height: 300px;
   width: 300px;
   border-radius: 50%;
-  animation: night 8s linear infinite;
+  animation: night 6s linear infinite;
   z-index: 100;
 }
 
@@ -119,11 +119,17 @@ main {
   0% {
     opacity: 0;
   }
-  25% {
-    opacity: 0.5;
+  30% {
+    opacity: 0.4;
   }
   50% {
+    opacity: 0.8;
+  }
+  60% {
     opacity: 1;
+  }
+  90% {
+    opacity: 0.8;
   }
   100% {
     opacity: 0;
