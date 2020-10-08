@@ -1,0 +1,73 @@
+/** @format */
+
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+*::before {
+  box-sizing: border-box;
+}
+
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+body {
+  width: 500px;
+  height: 500px;
+  background-color: #b4b4b4;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.bianry {
+  width: 500px;
+  height: 500px;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  font-family: 'Roboto';
+  font-weight: bold;
+}
+
+.labels {
+  display: flex;
+}
+
+label {
+  display: block;
+  font-family: 'Roboto';
+  font-size: 11px;
+  font-weight: bold;
+}
+
+.container {
+  text-align: center;
+}
+.input {
+  width: 25px;
+  height: 25px;
+  display: block;
+  background: white;
+  text-align: center;
+  border: 1px black solid;
+  font-family: 'Roboto';
+  font-weight: bold;
+  padding: 3px;
+}
+
+#total {
+  font-family: 'Roboto';
+  font-weight: bold;
+}
